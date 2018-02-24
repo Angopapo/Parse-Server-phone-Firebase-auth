@@ -25,18 +25,13 @@ FIREBASE_DATABASE_URL = "https://SOME_ID.firebaseio.com"
      Make sure to setup the accountkit oauth when starting your parse server:
 
 ```js
-import { ParseServer } from 'parse-server'
-import firebaseAuthAdapter from 'parse-server-firebase-auth-adapter'
-
 var api = new ParseServer({
     ...
     auth: {
-    
         firebase: {
         module: 'Parse-Server-phone-Firebase-auth',
         serviceAccount: 'path/to/serviceAccountKey.json',
         databaseURL: 'https://yourAppId.firebaseio.com'
-        
         }
     }
 });
