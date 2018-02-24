@@ -7,7 +7,7 @@ An module to login users in parse server with phone numbers using Firebase Auth.
    eg. $ cd /home/demo/parse-server-exemple
 3.
 ```js
-npm i -S Parse-Server-phone-Firebase-auth
+npm i -S parse-server-phone-firebase-auth
 ```
 4. Copy the `firebaseAccountKey.json` from Firebase into your folder, maybe root of your project's folder.
 5. Add new environment into your `.env` or using export in your terminal.
@@ -29,7 +29,7 @@ var api = new ParseServer({
     ...
     auth: {
         firebase: {
-        module: 'Parse-Server-phone-Firebase-auth',
+        module: 'parse-server-phone-firebase-auth',
         serviceAccount: 'path/to/serviceAccountKey.json',
         databaseURL: 'https://yourAppId.firebaseio.com'
         }
